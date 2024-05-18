@@ -621,7 +621,8 @@ with tabMain:
         with st.expander("See the API Json output"):
             response
         
-        output_code = response["choices"][0]["text"]
+        ## output_code = response["choices"][0]["text"]
+        output_code = response.choices[0].text
 
         # ----------------------Dataframe section----------------------------------
 
