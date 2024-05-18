@@ -603,18 +603,13 @@ with tabMain:
         # ----------------------API call section----------------------------------
 
         ## Depricated ## response = openai.Completion.create(
-        response = openai.chat.completions.create(
+        response = openai.completions.create(
             model=engine,
-            messages=[
-                {
-                    "role": "user",
-                    "content": f"Please provide a list of the top {number} {text_input} along with the following information in a three-column spreadsheet: {column_01}, {column_02}, and {column_03}. The columns should be labeled as follows: {column_01} | {column_02} | {column_03}"
-                },
-            ],
+            prompt=f"Please provide a list of the top {number} {text_input} along with the following information in a three-column spreadsheet: {column_01}, {column_02}, and {column_03}. The columns should be labeled as follows: {column_01} | {column_02} | {column_03}",
             temperature=0.5,
             max_tokens=1707,
             top_p=1,
-            ## Depricated ## best_of=2,
+            best_of=2,
             frequency_penalty=0,
             presence_penalty=0,
         )
@@ -625,8 +620,8 @@ with tabMain:
 
         with st.expander("See the API Json output"):
             response
-        output_code = rresponse.choices[0].message.content.strip()
-        ## Depricated ## output_code = response["choices"][0]["text"]
+        
+        output_code = response["choices"][0]["text"]
 
         # ----------------------Dataframe section----------------------------------
 
