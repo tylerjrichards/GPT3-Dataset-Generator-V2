@@ -611,7 +611,7 @@ with tabMain:
             temperature=0.5,
             max_tokens=1707,
             top_p=1,
-            best_of=2,
+            ## Depricated ## best_of=2,
             frequency_penalty=0,
             presence_penalty=0,
         )
