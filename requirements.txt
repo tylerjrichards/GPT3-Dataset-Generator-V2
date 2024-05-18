@@ -4,7 +4,7 @@ openai
 
 streamlit-aggrid==0.2.2-2
 
-snowflake-connector-python==2.7.7
+snowflake-connector-python
 snowflake-sqlalchemy
 sqlalchemy
 
