@@ -265,19 +265,22 @@ with tabMain:
                     "GPT3 engine",
                     (
                         "Davinci",
-                        "Curie",
+                        ## Depricated ## "Curie",
                         "Babbage",
+                        "Turbo"
                     ),
                     horizontal=True,
                     help="Davinci is the most powerful engine, but it's also the slowest. Curie is the fastest, but it's also the least powerful. Babbage is somewhere in the middle.",
                 )
 
                 if engine == "Davinci":
-                    engine = "davinci-instruct-beta-v3"
-                elif engine == "Curie":
-                    engine = "curie-instruct-beta-v2"
+                    engine = "davinci-002"
+                ## Depricated ##elif engine == "Curie":
+                ## Depricated ##    engine = "curie-instruct-beta-v2"
                 elif engine == "Babbage":
-                    engine = "babbage-instruct-beta"
+                    engine = "babbage-002"
+                elif engine == "Turbo":
+                    engine = "gpt-3.5-turbo-instruct"
 
             st.write("")
 
@@ -319,19 +322,22 @@ with tabMain:
                     "GPT3 engine",
                     (
                         "Davinci",
-                        "Curie",
+                        ## Depricated ## "Curie",
                         "Babbage",
+                        "Turbo"
                     ),
                     horizontal=True,
                     help="Davinci is the most powerful engine, but it's also the slowest. Curie is the fastest, but it's also the least powerful. Babbage is somewhere in the middle.",
                 )
 
                 if engine == "Davinci":
-                    engine = "davinci-instruct-beta-v3"
-                elif engine == "Curie":
-                    engine = "curie-instruct-beta-v2"
+                    engine = "davinci-002"
+                ## Depricated ##elif engine == "Curie":
+                ## Depricated ##    engine = "curie-instruct-beta-v2"
                 elif engine == "Babbage":
-                    engine = "babbage-instruct-beta"
+                    engine = "babbage-002"
+                elif engine == "Turbo":
+                    engine = "gpt-3.5-turbo-instruct"
 
             st.write("")
 
@@ -373,20 +379,23 @@ with tabMain:
                     "GPT3 engine",
                     (
                         "Davinci",
-                        "Curie",
+                        ## Depricated ## "Curie",
                         "Babbage",
+                        "Turbo"
                     ),
                     horizontal=True,
                     help="Davinci is the most powerful engine, but it's also the slowest. Curie is the fastest, but it's also the least powerful. Babbage is somewhere in the middle.",
                 )
 
                 if engine == "Davinci":
-                    engine = "davinci-instruct-beta-v3"
-                elif engine == "Curie":
-                    engine = "curie-instruct-beta-v2"
+                    engine = "davinci-002"
+                ## Depricated ##elif engine == "Curie":
+                ## Depricated ##    engine = "curie-instruct-beta-v2"
                 elif engine == "Babbage":
-                    engine = "babbage-instruct-beta"
-
+                    engine = "babbage-002"
+                elif engine == "Turbo":
+                    engine = "gpt-3.5-turbo-instruct"
+                    
             st.write("")
 
             submitted = st.form_submit_button("Build my dataset! ✨", on_click=increment)
@@ -427,19 +436,22 @@ with tabMain:
                     "GPT3 engine",
                     (
                         "Davinci",
-                        "Curie",
+                        ## Depricated ## "Curie",
                         "Babbage",
+                        "Turbo"
                     ),
                     horizontal=True,
                     help="Davinci is the most powerful engine, but it's also the slowest. Curie is the fastest, but it's also the least powerful. Babbage is somewhere in the middle.",
                 )
 
                 if engine == "Davinci":
-                    engine = "davinci-instruct-beta-v3"
-                elif engine == "Curie":
-                    engine = "curie-instruct-beta-v2"
+                    engine = "davinci-002"
+                ## Depricated ##elif engine == "Curie":
+                ## Depricated ##    engine = "curie-instruct-beta-v2"
                 elif engine == "Babbage":
-                    engine = "babbage-instruct-beta"
+                    engine = "babbage-002"
+                elif engine == "Turbo":
+                    engine = "gpt-3.5-turbo-instruct"
 
             st.write("")
 
@@ -482,19 +494,22 @@ with tabMain:
                     "GPT3 engine",
                     (
                         "Davinci",
-                        "Curie",
+                        ## Depricated ## "Curie",
                         "Babbage",
+                        "Turbo"
                     ),
                     horizontal=True,
                     help="Davinci is the most powerful engine, but it's also the slowest. Curie is the fastest, but it's also the least powerful. Babbage is somewhere in the middle.",
                 )
 
                 if engine == "Davinci":
-                    engine = "davinci-instruct-beta-v3"
-                elif engine == "Curie":
-                    engine = "curie-instruct-beta-v2"
+                    engine = "davinci-002"
+                ## Depricated ##elif engine == "Curie":
+                ## Depricated ##    engine = "curie-instruct-beta-v2"
                 elif engine == "Babbage":
-                    engine = "babbage-instruct-beta"
+                    engine = "babbage-002"
+                elif engine == "Turbo":
+                    engine = "gpt-3.5-turbo-instruct"
 
             st.write("")
 
@@ -534,19 +549,22 @@ with tabMain:
                     "GPT3 engine",
                     (
                         "Davinci",
-                        "Curie",
+                        ## Depricated ## "Curie",
                         "Babbage",
+                        "Turbo"
                     ),
                     horizontal=True,
                     help="Davinci is the most powerful engine, but it's also the slowest. Curie is the fastest, but it's also the least powerful. Babbage is somewhere in the middle.",
                 )
 
                 if engine == "Davinci":
-                    engine = "davinci-instruct-beta-v3"
-                elif engine == "Curie":
-                    engine = "curie-instruct-beta-v2"
+                    engine = "davinci-002"
+                ## Depricated ##elif engine == "Curie":
+                ## Depricated ##    engine = "curie-instruct-beta-v2"
                 elif engine == "Babbage":
-                    engine = "babbage-instruct-beta"
+                    engine = "babbage-002"
+                elif engine == "Turbo":
+                    engine = "gpt-3.5-turbo-instruct"
 
             st.write("")
 
@@ -599,7 +617,8 @@ with tabMain:
 
         # ----------------------API call section----------------------------------
 
-        response = openai.Completion.create(
+        ## Depricated ## response = openai.Completion.create(
+        response = openai.completions.create(
             model=engine,
             prompt=f"Please provide a list of the top {number} {text_input} along with the following information in a three-column spreadsheet: {column_01}, {column_02}, and {column_03}. The columns should be labeled as follows: {column_01} | {column_02} | {column_03}",
             temperature=0.5,
@@ -616,8 +635,9 @@ with tabMain:
 
         with st.expander("See the API Json output"):
             response
-
-        output_code = response["choices"][0]["text"]
+        
+        ## output_code = response["choices"][0]["text"]
+        output_code = response.choices[0].text
 
         # ----------------------Dataframe section----------------------------------
 
